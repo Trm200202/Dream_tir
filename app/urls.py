@@ -32,8 +32,7 @@ urlpatterns = [
     path('avtopagruschik-orta-category/', AvtopagruschikOrtaCategoryAPIView.as_view(), name='avtopagruschik-orta-category'),
     path('avtopagruschik-kichik-category/', AvtopagruschikKichikCategoryAPIView.as_view(), name='avtopagruschik-kichik-category'),
     path('karzinka/', CartAPIView.as_view(), name='karzinka'),
-
-    path('cart/', ProductCartAPIView.as_view())
+    path('cart/', ProductCartAPIView.as_view()),
 ]
 
 
