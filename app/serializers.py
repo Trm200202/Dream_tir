@@ -37,3 +37,8 @@ class CartSerializer(serializers.Serializer):
     plus = serializers.BooleanField()
 
 
+class MyNumberSerializer(serializers.Serializer):
+
+    class Meta:
+        model=models.MyNumbers
+        fields="__all__"

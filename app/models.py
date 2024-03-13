@@ -1,10 +1,20 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db import models
-
+from django.core.validators import RegexValidator
 
 
 # Create your models here.
+
+class MyNumbers(models.Model):
+    number = models.CharField(max_length=50,
+                                     validators=[RegexValidator(r'^\+998\d{9}$')],
+                                     verbose_name="Telefon raqami")
+
+
+    def __str__(self):
+        return self.number
+
+
 
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name="Nomi")

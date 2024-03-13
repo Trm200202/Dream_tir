@@ -261,7 +261,9 @@ class ProductCartAPIView(APIView):
 
 
 
-
+class MyNumberAPIVew(ListAPIView):
+    queryset = MyNumbers.objects.all() 
+    serializer_class = serializers.MyNumberSerializer
 
 
         
