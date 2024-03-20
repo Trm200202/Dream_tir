@@ -37,8 +37,8 @@ class CartSerializer(serializers.Serializer):
     plus = serializers.BooleanField()
 
 
-class ConferensSerializer(serializers.Serializer):
+class ConferensSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model=models.Conferens
-        fields="__all__"
+        model = models.Conferens
+        fields = "__all__"

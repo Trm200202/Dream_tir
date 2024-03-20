@@ -261,11 +261,10 @@ class ProductCartAPIView(APIView):
 
 
 
-class ConferensAPIView(APIView):
-    def get(self, request):
-        queryset = Conferens.objects.all()
-        serializer_class = serializers.ConferensSerializer(queryset, many=True)
-        return Response(serializer_class.data)
+class ConferensAPIView(ListAPIView, RetrieveAPIView, UpdateAPIView):
+
+    queryset = Conferens.objects.all()
+    serializer_class = serializers.ConferensSerializer
     
 
         
