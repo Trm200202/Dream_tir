@@ -261,7 +261,7 @@ class ProductCartAPIView(APIView):
 
 
 
-class ConferensAPIView(ListAPIView, RetrieveAPIView, UpdateAPIView):
+class ConferensAPIView(ListAPIView):
 
     queryset = Conferens.objects.all()
     serializer_class = serializers.ConferensSerializer
