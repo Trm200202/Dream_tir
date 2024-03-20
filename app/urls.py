@@ -33,7 +33,7 @@ urlpatterns = [
     path('avtopagruschik-kichik-category/', AvtopagruschikKichikCategoryAPIView.as_view(), name='avtopagruschik-kichik-category'),
     path('karzinka/', CartAPIView.as_view(), name='karzinka'),
     path('cart/', ProductCartAPIView.as_view()),
-    path('my-number/', MyNumberAPIVew.as_view(), name="mening telefon raqamim"),
+    path('conferens/', ConferensAPIView.as_view(), name="mening telefon raqamim"),
 ]
 
 

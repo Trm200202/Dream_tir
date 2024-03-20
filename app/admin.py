@@ -23,10 +23,10 @@ class SizeCategoryAdmin(admin.ModelAdmin):
     list_display = ("id", "differens")
     list_display_links = ("id", "differens")
 
-@admin.register(MyNumbers)
+@admin.register(Conferens)
 class SizeCategoryAdmin(admin.ModelAdmin):
-    list_display = ("id", "number")
-    list_display_links = ("id", "number")
+    list_display = ("id", "bio")
+    list_display_links = ("id", "bio")
 
 
 @admin.register(Cart)

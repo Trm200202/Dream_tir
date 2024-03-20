@@ -5,14 +5,12 @@ from django.core.validators import RegexValidator
 
 # Create your models here.
 
-class MyNumbers(models.Model):
-    number = models.CharField(max_length=50,
-                                     validators=[RegexValidator(r'^\+998\d{9}$')],
-                                     verbose_name="Telefon raqami")
+class Conferens(models.Model):
+    bio = models.TextField()
 
 
     def __str__(self):
-        return self.number
+        return self.bio
 
 
 
