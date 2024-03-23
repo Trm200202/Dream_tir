@@ -7,26 +7,26 @@ from django.contrib.admin.models import LogEntry
 
 @admin.register(Avto)
 class AvtoAdmin(admin.ModelAdmin):
-    list_display = ("id", "brend", "model", "size", "layer", "price", "sizes")
-    list_display_links = ("id", "brend", "model",  "size", "layer", "price", "sizes")
-    search_fields = ("brend","model", "size")
+    list_display = ("id", "brend", "model", "size", "layer", "price", "sizes", )
+    list_display_links = ("id", "brend", "model",  "size", "layer", "price", "sizes", )
+    search_fields = ("brend","model", "size", )
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ("id", "name")
-    list_display_links = ("id", "name")
+    list_display = ("id", "name", )
+    list_display_links = ("id", "name", )
     search_fields = ("name", )
     
 
 @admin.register(SizeCategory)
 class SizeCategoryAdmin(admin.ModelAdmin):
-    list_display = ("id", "differens")
-    list_display_links = ("id", "differens")
+    list_display = ("id", "differens", )
+    list_display_links = ("id", "differens", )
 
 @admin.register(Conferens)
 class SizeCategoryAdmin(admin.ModelAdmin):
-    list_display = ("id", "bio")
-    list_display_links = ("id", "bio")
+    list_display = ("id", "bio", )
+    list_display_links = ("id", "bio", )
 
 
 @admin.register(Cart)
