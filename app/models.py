@@ -42,7 +42,7 @@ class SizeCategory(models.Model):
 class Avto(models.Model):
     model = models.CharField(max_length=255)
     size = models.CharField(max_length=200)
-    imagess = models.ImageField(upload_to="immdages/")
+    imagess = models.ImageField(upload_to="image/")
     brend = models.CharField(max_length=200)
     category = models.ForeignKey(Category,on_delete=models.PROTECT)
     sizes = models.ForeignKey(SizeCategory, on_delete=models.PROTECT)
