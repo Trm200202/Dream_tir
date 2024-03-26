@@ -25,7 +25,7 @@ class CartAPIView(ListAPIView):
 
 # Create your views here.
 
-class AvtoAPIView(ListAPIView, RetrieveAPIView, UpdateAPIView):
+class AvtoAPIView(CreateAPIView, ListAPIView, RetrieveAPIView, UpdateAPIView):
     queryset = Avto.objects.all()
     serializer_class = serializers.AvtoSerializer
 
